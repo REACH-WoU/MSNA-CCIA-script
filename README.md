@@ -1,2 +1,5 @@
-# MSNA-CCIA-script
-This script calculates sectoral and multisectoral indices according to REACH Ukraine methodology
+# CINM
+
+CINM is a recursive acronym. CINM Is Not Msni
+
+Also this sounds like cinema
