@@ -214,7 +214,7 @@ for (var in variables$num_variable) {
 # Calculating adjusted rCSI
 data.list$main <- data.list$main %>%
   mutate(rcsi_adj = mapply(sum, (as.numeric(fsl_rcsi_lessquality)*3), (as.numeric(fsl_rcsi_borrow)*1), 
-                       (as.numeric(fsl_rcsi_mealsize)*2), (as.numeric(fsl_rcsi_mealnb)*1), (as.numeric(fsl_rcsi_mealadult)*3)),
+                       (as.numeric(fsl_rcsi_mealsize)*2), (as.numeric(fsl_rcsi_mealnb)*1), (as.numeric(fsl_rcsi_mealadult)*1)),
          rcsi_score_adj = case_when(rcsi_adj < 4 ~ "Low",
                                 rcsi_adj <= 18 ~ "Medium",
                                 rcsi_adj > 18 ~ "High",
